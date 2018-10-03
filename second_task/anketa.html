@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Second_Task</title>
+        <link rel="stylesheet" href="css/anketa.css">
+    </head>
+        <body>
+            <div class="form">
+                <input type="text" name="surename" class="form_input" placeholder="Фамилия" id="userSureName">
+                <input type="text" name="name" class="form_input" placeholder="Имя" id="userName">
+                <input type="text" name="patronymic" class="form_input" placeholder="Отчество" id="userPatronymic" >
+                <input type="text" name="age" class="form_input" placeholder="Возраст" id="userAge">
+                <div class="form_inputText">Пол:</div>
+                <input type="radio" name="gender" value="Мужчина" id="GenderMan" checked>Мужской
+                <input type="radio" name="gender" value="Женщина" id="GenderWoman">Женский
+                <button class="form_inputButton" id="button-input">Натиснуть</button>
+                <div class="modal-window" id="popup">
+                    <div class="modal">
+                        <div class="modal-content modal-conten-style">
+                            <div>ФИО:
+                                <span id="addName"></span>
+                            </div>
+                            <div>Возраст, лет:
+                                <span id="addAge"></span>
+                            </div>
+                            <div>Возраст, дней:
+                                <span id="addAgeDay"></span>
+                            </div>
+                            <div>Пол:
+                                <span id="addGender"></span>
+                            </div>
+                            <div>Пенсионный возраст:
+                                <span id="addRetirementAge"></span>
+                            </div>
+                            </div>
+                            <button class="button-close" id="button-close">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+            <script src="js/anketa.js"></script>
+        </body>
+</html>
+
+
